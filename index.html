@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Web Developer & Layout Artist</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<header class="nav-wrapper" id="nav">
+  <nav class="nav">
+    <a href="#home" class="nav-logo">GODIX<span class="dot">.</span></a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg-text" aria-hidden="true">PORTFOLIO</div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Hello, I'm</p>
+      <h1 class="hero-name">JOHN DANE L.<br /><em>GALVEZ</em></h1>
+      <div class="hero-tags">
+        <span class="tag">Web Developer</span>
+        <span class="tag-sep">×</span>
+        <span class="tag">Layout Artist</span>
+      </div>
+      <p class="hero-bio">
+        I craft purposeful digital experiences — combining clean, performant code
+        with a sharp eye for visual design. Currently serving as PIO for IC-lsg,
+        I bridge the gap between technology and communication.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-ring"></div>
+      <div class="hero-photo-ring hero-photo-ring--2"></div>
+      <img src="pic3.jpg"
+           alt="Profile" class="hero-photo" />
+      <div class="hero-photo-badge"><span>Available for work</span><span class="badge-dot"></span></div>
+    </div>
+    <div class="hero-scroll-hint"><span>Scroll</span><div class="scroll-line"></div></div>
+  </section>
+
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">02 — Experience</span>
+        <h2 class="section-title">My Journey</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-marker"><div class="marker-dot"></div><div class="marker-line"></div></div>
+          <div class="timeline-card">
+            <div class="timeline-card-img">
+              <img src="pic5.jpg" alt="layout design">
+            </div>
+            <div class="timeline-card-content">
+              <div class="card-meta"><span class="card-date">2022 — 2024</span><span class="card-type">Design</span></div>
+              <h3 class="card-role">Layout Artist</h3>
+              <p class="card-desc">Designed print and digital layouts with strong typographic sensibility. Collaborated with editorial teams to craft visually coherent publications.</p>
+              <ul class="card-skills"><li>Adobe InDesign</li><li>Typography</li><li>Print Production</li></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-marker"><div class="marker-dot"></div><div class="marker-line"></div></div>
+          <div class="timeline-card">
+            <div class="timeline-card-img">
+              <img src="pic4.jpg" alt="facilitator">
+            </div>
+            <div class="timeline-card-content">
+              <div class="card-meta"><span class="card-date">2023</span><span class="card-type">Education</span></div>
+              <h3 class="card-role">Facilitator</h3>
+              <p class="card-desc">Led workshops and training sessions, designing instructional materials and facilitating learning experiences.</p>
+              <ul class="card-skills"><li>Workshop Design</li><li>Public Speaking</li><li>Curriculum Dev</li></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-marker"><div class="marker-dot active"></div></div>
+          <div class="timeline-card timeline-card--current">
+            <div class="timeline-card-img">
+              <img src="pic2.jpg" alt="PIO">
+            </div>
+            <div class="timeline-card-content">
+              <div class="card-meta"><span class="card-date">Present</span><span class="card-type card-type--active">Current</span></div>
+              <h3 class="card-role">PIO for IC-lsg</h3>
+              <p class="card-desc">Managing communications strategy, content creation, and digital presence. Overseeing media relations and information dissemination.</p>
+              <ul class="card-skills"><li>Communications</li><li>Content Strategy</li><li>Media Relations</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section section--dark" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">03 — Projects</span>
+        <h2 class="section-title">Selected Work</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card" data-reveal>
+          <div class="project-img">
+            <img src="proj.png" alt="Project Alpha">
+          </div>
+          <div class="project-body">
+            <div class="project-number">01</div>
+            <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <h3 class="project-title">BANANA SCAN</h3>
+            <p class="project-desc">Responsive task manager with drag-and-drop and real-time updates. Built with vanilla JS and modern CSS Grid.</p>
+            <div class="project-links"><a href="https://github.com/nlzerogodix-eng/BananaScanner/tree/master" class="project-link">GitHub</a><a href="#" class="project-link project-link--accent">Live Demo</a></div>
+          </div>
+        </article>
+        <article class="project-card" data-reveal>
+          <div class="project-img">
+            <img src="proj2.png" alt="Project Beta">
+          </div>
+          <div class="project-body">
+            <div class="project-number">02</div>
+            <div class="project-tech"><span>React</span><span>Node.js</span><span>CSS Modules</span></div>
+            <h3 class="project-title">SUDOKU SOLVER</h3>
+            <p class="project-desc">Full-stack blog platform with markdown, dynamic routing, and headless CMS. Dark mode + RSS feed.</p>
+            <div class="project-links"><a href="https://github.com/nlzerogodix-eng/Sudoku-Solver" class="project-link">GitHub</a><a href="https://nlzerogodix-eng.github.io/Sudoku-Solver/" class="project-link project-link--accent">Live Demo</a></div>
+          </div>
+        </article>
+        <article class="project-card" data-reveal>
+          <div class="project-img">
+            <img src="proj3.png" alt="Project Gamma">
+          </div>
+          <div class="project-body">
+            <div class="project-number">03</div>
+            <div class="project-tech"><span>XAMPP</span><span>PHP</span><span>MySQL</span></div>
+            <h3 class="project-title">DATABASE</h3>
+            <p class="project-desc">Interactive design portfolio with scroll-driven animations, print layouts, brand identities, and editorial spreads.</p>
+            <div class="project-links"><a href="https://github.com/nlzerogodix-eng/task3_views" class="project-link">GitHub</a><a href="#" class="project-link project-link--accent">Live Demo</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">04 — Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-intro">
+          <p>Whether you have a project, collaboration, or just want to say hello — my inbox is always open.</p>
+          <a href="mailto:hello@yukin.dev" class="btn btn-primary">Send a Message</a>
+          <div class="contact-avatar-wrap">
+            <img src="pic14.jpg" alt="avatar" class="contact-avatar" />
+            <div class="contact-avatar-caption"><span class="mono-status">// always online</span></div>
+          </div>
+        </div>
+        <div class="contact-details">
+          <div class="contact-item" data-reveal><div class="contact-icon">📍</div><div><p class="contact-label">Location</p><p class="contact-value">Purok 11 Urban, Poblacion New Corella Davao del Norte</p></div></div>
+          <div class="contact-item" data-reveal><div class="contact-icon">✉️</div><div><p class="contact-label">Email</p><a href="mailto:daboygalvez19@gmail.com" class="contact-value contact-link">daboygalvez19@gmail.com</a></div></div>
+          <div class="contact-item" data-reveal><div class="contact-icon">📞</div><div><p class="contact-label">Phone</p><a href="tel:+639857949745" class="contact-value contact-link">+63 985 794 9745</a></div></div>
+          <div class="contact-item" data-reveal><div class="contact-icon">🔗</div><div><p class="contact-label">LinkedIn</p><a href="https://www.linkedin.com/in/john-dane-galvez-a784b0373/" class="contact-value contact-link">www.linkedin.com/in/john-dane-galvez</a></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p class="footer-copy">© <span id="year"></span> Yuki Nakamoto. Built with care.</p>
+    <a href="#home" class="footer-back">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
